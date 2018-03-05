@@ -1,0 +1,15 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "Proxy server to serve up the components of the YouDown (Meetup) event page",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node server.js"
+  },
+  "author": "Becca Stanger",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
