@@ -22,6 +22,11 @@ header {
   flex: 1 1 auto;
 }
 
+/* Temp - should remove */
+.event-suggestions-container {
+  max-width: 500px;
+}
+
 /*///////////////////////////////////*/
 
 
