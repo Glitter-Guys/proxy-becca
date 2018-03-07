@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouDown - Proxy Server</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.meetup.com/mu_static/en-US/graphik.c2ab8a6.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav__left">
+        <a href="/">YouDown</a>
+      </div>
+      <div class="nav__right">
+        <a href="/">Create a YouDown</a>
+        <a href="/">Log in</a>
+        <a href="/">Sign up</a>
+      </div>
+    </header>
+
+    <div id="header"></div>
+    <section id="page">
+
+      <div id="page-body">
+        <section id="page-main">
+          <div id="description"></div>
+          <div id="attendees"></div>
+          <div id="suggestions"></div>
+        </section>
+
+        <section id="page-sidebar">
+          <div id="where-when"></div>
+        </section>
+
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js"></script>
+
+    <script src='http://localhost:8080/event/247627526/bundle.js'></script> <!-- Header -->
+    <script src='http://localhost:4000/bundle.js'></script> <!-- Description -->
+    <script src='http://localhost:8000/bundle.js'></script> <!-- Attendees -->
+    <script src='http://localhost:4001/bundle.js'></script> <!-- Suggestions -->
+    <script src='http://127.0.0.1:9000/build/app.bundle.js'></script> <!-- Where When -->
+
+    <script>
+      ReactDOM.render(
+          React.createElement(Header, {data:window.data}),
+          document.getElementById('header')
+        );
+      ReactDOM.render(
+        React.createElement(Details),
+        document.getElementById('description')
+      );
+      ReactDOM.render(
+        React.createElement(Attendees),
+        document.getElementById('attendees')
+      );
+      ReactDOM.render(
+        React.createElement(Suggestions),
+        document.getElementById('suggestions')
+      );
+      ReactDOM.render(
+        React.createElement(WhereWhen),
+        document.getElementById('where-when')
+      );
+    </script>
+
+  </body>
+
+</html>
