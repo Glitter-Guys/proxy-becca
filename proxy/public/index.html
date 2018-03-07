@@ -2,7 +2,9 @@
 <html>
   <head>
     <title>YouDown - Proxy Server</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="https://www.meetup.com/mu_static/en-US/graphik.c2ab8a6.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
 
@@ -25,8 +27,6 @@
       </div>
     </section>
 
-    <!-- <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js"></script>
 
@@ -37,9 +37,6 @@
     <script src='http://127.0.0.1:9000/build/app.bundle.js'></script> <!-- Where When -->
 
     <script>
-      // const require = require('requirejs');
-      // const React = require('react');
-      // const ReactDom = require('react-dom');
       ReactDOM.render(
           React.createElement(Header, {data:window.data}),
           document.getElementById('header')
